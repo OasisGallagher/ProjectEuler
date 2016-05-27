@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A20128B-6E76-4489-BD13-ECF21079688C}</ProjectGuid>
+    <RootNamespace>ProjectEuler</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4290;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\problem1.cpp" />
+    <ClCompile Include="src\problem10.cpp" />
+    <ClCompile Include="src\problem103.cpp" />
+    <ClCompile Include="src\problem104.cpp" />
+    <ClCompile Include="src\problem105.cpp" />
+    <ClCompile Include="src\problem106.cpp" />
+    <ClCompile Include="src\problem107.cpp" />
+    <ClCompile Include="src\problem108.cpp" />
+    <ClCompile Include="src\problem109.cpp" />
+    <ClCompile Include="src\problem11.cpp" />
+    <ClCompile Include="src\problem110.cpp" />
+    <ClCompile Include="src\problem111.cpp" />
+    <ClCompile Include="src\problem112.cpp" />
+    <ClCompile Include="src\problem114.cpp" />
+    <ClCompile Include="src\problem115.cpp" />
+    <ClCompile Include="src\problem116.cpp" />
+    <ClCompile Include="src\problem117.cpp" />
+    <ClCompile Include="src\problem118.cpp" />
+    <ClCompile Include="src\problem119.cpp" />
+    <ClCompile Include="src\problem12.cpp" />
+    <ClCompile Include="src\problem120.cpp" />
+    <ClCompile Include="src\problem121.cpp" />
+    <ClCompile Include="src\problem122.cpp" />
+    <ClCompile Include="src\problem123.cpp" />
+    <ClCompile Include="src\problem124.cpp" />
+    <ClCompile Include="src\problem125.cpp" />
+    <ClCompile Include="src\problem126.cpp" />
+    <ClCompile Include="src\problem127.cpp" />
+    <ClCompile Include="src\problem128.cpp" />
+    <ClCompile Include="src\problem129.cpp" />
+    <ClCompile Include="src\problem13.cpp" />
+    <ClCompile Include="src\problem134.cpp" />
+    <ClCompile Include="src\problem14.cpp" />
+    <ClCompile Include="src\problem15.cpp" />
+    <ClCompile Include="src\problem16.cpp" />
+    <ClCompile Include="src\problem17.cpp" />
+    <ClCompile Include="src\problem18.cpp" />
+    <ClCompile Include="src\problem19.cpp" />
+    <ClCompile Include="src\problem2.cpp" />
+    <ClCompile Include="src\problem20.cpp" />
+    <ClCompile Include="src\problem21.cpp" />
+    <ClCompile Include="src\problem22.cpp" />
+    <ClCompile Include="src\problem23.cpp" />
+    <ClCompile Include="src\problem24.cpp" />
+    <ClCompile Include="src\problem25.cpp" />
+    <ClCompile Include="src\problem26.cpp" />
+    <ClCompile Include="src\problem27.cpp" />
+    <ClCompile Include="src\problem28.cpp" />
+    <ClCompile Include="src\problem29.cpp" />
+    <ClCompile Include="src\problem3.cpp" />
+    <ClCompile Include="src\problem30.cpp" />
+    <ClCompile Include="src\problem31.cpp" />
+    <ClCompile Include="src\problem32.cpp" />
+    <ClCompile Include="src\problem33.cpp" />
+    <ClCompile Include="src\problem34.cpp" />
+    <ClCompile Include="src\problem35.cpp" />
+    <ClCompile Include="src\problem36.cpp" />
+    <ClCompile Include="src\problem37.cpp" />
+    <ClCompile Include="src\problem38.cpp" />
+    <ClCompile Include="src\problem39.cpp" />
+    <ClCompile Include="src\problem4.cpp" />
+    <ClCompile Include="src\problem40.cpp" />
+    <ClCompile Include="src\problem41.cpp" />
+    <ClCompile Include="src\problem42.cpp" />
+    <ClCompile Include="src\problem43.cpp" />
+    <ClCompile Include="src\problem44.cpp" />
+    <ClCompile Include="src\problem45.cpp" />
+    <ClCompile Include="src\problem46.cpp" />
+    <ClCompile Include="src\problem47.cpp" />
+    <ClCompile Include="src\problem48.cpp" />
+    <ClCompile Include="src\problem49.cpp" />
+    <ClCompile Include="src\problem5.cpp" />
+    <ClCompile Include="src\problem50.cpp" />
+    <ClCompile Include="src\problem51.cpp" />
+    <ClCompile Include="src\problem52.cpp" />
+    <ClCompile Include="src\problem53.cpp" />
+    <ClCompile Include="src\problem54.cpp" />
+    <ClCompile Include="src\problem55.cpp" />
+    <ClCompile Include="src\problem56.cpp" />
+    <ClCompile Include="src\problem57.cpp" />
+    <ClCompile Include="src\problem58.cpp" />
+    <ClCompile Include="src\problem59.cpp" />
+    <ClCompile Include="src\Problem6.cpp" />
+    <ClCompile Include="src\problem60.cpp" />
+    <ClCompile Include="src\problem61.cpp" />
+    <ClCompile Include="src\problem62.cpp" />
+    <ClCompile Include="src\problem63.cpp" />
+    <ClCompile Include="src\problem64.cpp" />
+    <ClCompile Include="src\problem67.cpp" />
+    <ClCompile Include="src\problem68.cpp" />
+    <ClCompile Include="src\problem69.cpp" />
+    <ClCompile Include="src\problem7.cpp" />
+    <ClCompile Include="src\problem70.cpp" />
+    <ClCompile Include="src\problem71.cpp" />
+    <ClCompile Include="src\problem72.cpp" />
+    <ClCompile Include="src\problem73.cpp" />
+    <ClCompile Include="src\problem74.cpp" />
+    <ClCompile Include="src\problem75.cpp" />
+    <ClCompile Include="src\problem76.cpp" />
+    <ClCompile Include="src\problem77.cpp" />
+    <ClCompile Include="src\problem78.cpp" />
+    <ClCompile Include="src\problem79.cpp" />
+    <ClCompile Include="src\problem8.cpp" />
+    <ClCompile Include="src\problem81.cpp" />
+    <ClCompile Include="src\problem82.cpp" />
+    <ClCompile Include="src\problem83.cpp" />
+    <ClCompile Include="src\problem84.cpp" />
+    <ClCompile Include="src\problem85.cpp" />
+    <ClCompile Include="src\problem86.cpp" />
+    <ClCompile Include="src\problem87.cpp" />
+    <ClCompile Include="src\problem88.cpp" />
+    <ClCompile Include="src\problem89.cpp" />
+    <ClCompile Include="src\problem9.cpp" />
+    <ClCompile Include="src\problem90.cpp" />
+    <ClCompile Include="src\problem91.cpp" />
+    <ClCompile Include="src\problem92.cpp" />
+    <ClCompile Include="src\problem93.cpp" />
+    <ClCompile Include="src\problem94.cpp" />
+    <ClCompile Include="src\problem95.cpp" />
+    <ClCompile Include="src\problem96.cpp" />
+    <ClCompile Include="src\problem97.cpp" />
+    <ClCompile Include="src\problem98.cpp" />
+    <ClCompile Include="src\problem99.cpp" />
+    <ClCompile Include="src\problem100.cpp" />
+    <ClCompile Include="src\problem101.cpp" />
+    <ClCompile Include="src\problem102.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\problem113.lua" />
+    <None Include="src\problem65.py" />
+    <None Include="src\problem66.py" />
+    <None Include="src\problem80.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\prime-sieve.hpp" />
+    <ClInclude Include="include\problemall.hpp" />
+    <ClInclude Include="include\visitmatrix.hpp" />
+    <ClInclude Include="include\equation-solver.hpp" />
+    <ClInclude Include="include\next-permutation.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
